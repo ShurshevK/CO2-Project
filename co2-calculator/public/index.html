@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>KALKULAČKA CO2</title>
+  <link rel="icon" href="<%= BASE_URL %>favicon.png" />
+  <style>
+
+    #app {
+      margin: 0 !important;
+      position: relative;
+      z-index: 1;
+      left: 2%;
+    }
+
+    body {
+      position: relative;
+      margin: 2rem;
+      max-width: 100%;
+      overflow-x: hidden;
+      max-height: 100%;
+      overflow-y: hidden;
+    }
+
+    .background-overlay {
+      position: absolute;
+      left: -3rem;
+      right: 0;
+      top: 0;
+      bottom: -5rem;
+      width: 110% !important;
+      height: 103% ;
+    }
+
+    .total,
+    .header {
+      background-color: transparent !important;
+      z-index: 1 !important;
+      color: #000000;
+    }
+
+    .el-progress-bar__inner,
+    .el-progress-bar__outer {
+      background-color: #fc5b3f !important;
+    }
+
+    .reload-btn {
+      display: inline-block;
+      padding: 0.5rem 2.5rem;
+      border: 1px solid black;
+      cursor: pointer;
+      font-size: 2rem;
+      font-weight: 800;
+      margin-left: 40rem;
+      margin-bottom: 3rem;
+      letter-spacing: 3px;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+    }
+
+    .question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #questions {
+      margin-bottom: 4rem;
+    }
+
+    .bottom-header {
+      margin-top: -6rem;
+    }
+
+    .emissions {
+      margin: 0 !important;
+    }
+
+    .customOutputEl {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem 6rem;
+      margin-bottom: 4%;
+      border-bottom: 1px solid #000000;
+      margin-left: 2%;
+      margin-right: 1%;
+    }
+
+    .customOutputElDesc {
+      width: 78%;
+      color: #000000;
+      align-items: left;
+      margin-left: -6rem;
+      margin-right: 1rem;
+      margin-top: 2%;
+      font-size: 1.2em;
+      
+    }
+
+    .customOutputValue {
+      font-size: 2em;
+      font-weight: 400;
+      color: #000000;
+      border: 1px solid #000000;
+      width: 290px;
+      text-align: center;
+      font-family: "PPNeueMontreal-Medium";
+      margin-left: 12rem;
+      margin-right: -3rem;
+      
+    }
+
+    .total {
+      display: none;
+    }
+  </style>
+  <!-- Google Tag Manager -->
+  <script>
+    ; (function (w, d, s, l, i) {
+      w[l] = w[l] || []
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : ""
+      j.async = true
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
+      f.parentNode.insertBefore(j, f)
+    })(window, document, "script", "dataLayer", "GTM-P4GHH3F")
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+  <div class="background-overlay"></div>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4GHH3F" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without
+        JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      console.clear()
+      let progressEl = document.querySelector(".el-progress-bar__inner");
+      let bgOverlayEl = document.querySelector(".background-overlay");
+      bgOverlayEl.setAttribute("style", progressEl.getAttribute("style"));
+      document.addEventListener("click", () => {
+        bgOverlayEl.setAttribute("style", progressEl.getAttribute("style"));
+        calKGDaily();
+      })
+      let allSelectOptions = document.querySelectorAll("select");
+      allSelectOptions.forEach((input)=>{
+        input.addEventListener("change",()=>{
+          bgOverlayEl.setAttribute("style", progressEl.getAttribute("style"));
+        })
+      })
+      let reloadBtn = document.querySelector(".reload-btn");
+      reloadBtn.addEventListener("click", () => {
+        window.location.href = window.location.href;
+      })
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+/*
+Write your variables here. All available variables can be
+found in element-plus/packages/theme-chalk/src/common/var.scss.
+For example, to overwrite the theme color:
+*/
+
+/* icon font path, required */
+$--font-path: "~element-plus/lib/theme-chalk/fonts";
+
+$font-size-1: 2em;
+$font-size-2: 1.4em;
+$font-size-3: 1.1em;
+$background-color: #eae8e9;
+$font-color-light: #000000;
+$planted-green: #3d3d3d;
+
+$--color-primary: $planted-green;
+
+@import "~element-plus/packages/theme-chalk/src/index";
+
+@mixin dark {
+  background-color: $background-color;
+  color: $font-color-light;
+}
+
+@mixin light {
+  background-color: $font-color-light;
+  color: $background-color;
+}
+
+@mixin center {
+  margin: auto;
+  width: 75%;
+}
+
+.el-collapse {
+  margin-left: 2%;
+  margin-right: 2%;
+  border-bottom: 1px solid #2c2c2c;
+  border-top: 1px solid #ffffff00;
+  
+}
+
+.el-collapse-item__header {
+  @include dark;
+  border-bottom: 1px solid #2c2c2c;
+  font-size: 30px;
+  height: 33px;
+  background-color: #ffffff00;
+
+}
+
+.el-collapse-item__wrap {
+  @include dark;
+  border-bottom: 1px solid #2c2c2c;
+  background-color: #ffffff00;
+}
+
+.el-switch__core {
+  background: #c4c4c5;
+}
+
+.el-switch.is-checked .el-switch__core {
+  border-color: #2c2c2c;
+  background-color: #2c2c2c;
+}
+
+.el-form--label-top .el-form-item__label {
+  padding: 0px;
+}
+
+.el-divider__text {
+  @include light;
+  font-size: $font-size-1;
+}
+
+.el-divider--horizontal {
+border-bottom: 1px solid #2c2c2c;
+}
+
+.el-form-item__label {
+  font-size: $font-size-2;
+  color:#000000;
+  text-align: left;
+  line-height: 1em;
+  
+}
+
+.el-form-item {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.el-input-name__label {
+  font-size: $font-size-2;
+}
+
+.el-select-dropdown__list,
+.el-select-dropdown__wrap,
+.el-scrollbar__view {
+  @include light;
+}
+
+.el-input-number__increase,
+.el-input-number__decrease {
+  color: $font-color-light;
+  background: #ffffff;
+}
+
+.el-select-dropdown__item {
+  @include light;
+  font-size: $font-size-2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.el-popper {
+  @include light;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.el-input__inner {
+  @include dark;
+  border: 1px solid #191a1a;
+  height: 40px;
+  background-color: #ffffff00;
+  border-radius: 0px;
+}
+
+.el-progress-bar__innerText {
+  font-size: 3em;
+  font-weight: 300;
+  color: #191a1a;
+}
+
+.el-progress-bar__inner {
+  border-radius: 0px;
+}
+.el-progress-bar__outer {
+  background-color: #ffffff00;
+  border: 1px solid #2c2c2c;
+  border-radius: 0px;
+  width: 30%;
+  height: 120%;
+  margin-left: 1%;
+}
+
+.el-tag {
+  margin: 5% 0;
+  font-size: $font-size-3;
+  background-color: $background-color;
+  background-color: #ffffff00;
+  width: 260px;
+  height: 40px;
+}
+
+.el-tag--plain {
+color: #2c2c2c;
+border-color: #2c2c2c;
+border-radius: 0px;
+}
+
+.el-icon-arrow-right:before {
+  content: "↙";
+  font-family: "PPNeueMontreal-Regular";
+}
+
+.el-input-number__increase {
+  color: #2c2c2c;
+  background: #ffffff00;
+  border-left: 1px solid #2c2c2c; 
+}
+
+.el-input-number__decrease {
+  color: #2c2c2c;
+  background: #ffffff00;
+  border-right: 1px solid #2c2c2c;
+}
+
+.el-input-number__increase.is-disabled, .el-input-number__decrease.is-disabled {
+  color: #2c2c2c ;
+  cursor: not-allowed;
+}
+
+.el-select .el-input .el-select__caret {
+  color:#2c2c2c ;
+}
+
+.el-input--suffix .el-input__inner {
+  padding-right: 17px;
+}
+
+
+element.style {
+  margin-left: 285px;
+}
+
+element.style {
+  margin-left: 285px;
+}

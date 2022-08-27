@@ -1,0 +1,63 @@
+{
+  co2Calculator: "CO<sub>2</sub>&nbsp;Calculator",
+  introduction: "With five factors you can quickly estimate your footprint in CO<sub>2</sub> equivalents (CO<sub>2</sub>e). Your footprint is interactively computed for each factor as well as overall. The sources for the estimation of each factor are linked and the source code is available on <a href='https: //github.com/JarnoRFB/planted-co2-calculator'>GitHub</a>. <br /> All options are preset to a big footprint. Find out how much CO<sub>2</sub> you already save and where you can still improve. Have fun!",
+  tonsCarbon: "tons CO<sub>2</sub>e",
+  result: "With a footprint of {totalEmissions} you are {relationToAverage} the German average of 11 tons. Compensate your footprint now, for example at <a href='https://planted.green?utm_source=calculator&utm_medium=press&utm_campaign=calculator_launch'>planted.green</a>.",
+  relation: {
+    farBelow: "far below",
+    below: "below",
+    above: "above",
+    farAbove: "far above",
+  },
+  sources: "Zdroje",
+  value: "Value",
+  thisSourceIsValid: "This source is up to date.",
+  thisSourceIsInvalid: "This source is no longer up to date.",
+  shortHauls: "Krátke vzdialenosti ",
+  mediumHauls: "Stredné vzdialenosti",
+  longHauls: "Dlhé vzdialenosti",
+  kilometersPerWeek: "Kilometrov za týždeň",
+  householdSize: "Ľudia v domácnosti",
+  apartmentSize: "Veľkosť bývania",
+  apartmentAge: "Rok výstavby",
+  energySource: "Zdroj energie",
+  greenEnergy: "Zelená energia",
+  flying: {
+    question: "Ako často ste lietali za posledných 12 mesiacov?",
+  },
+  driving: {
+    question: "Koľko kilometrov týždenne prejdete autom?",
+  },
+  housing: {
+    question: "Bývanie: vykurovanie a elektrina",
+    type: "Typ bývania",
+    options: {
+      oil: "Oil",
+      naturalGas: "Gas",
+      longDistanceHeating: "Long distance heating",
+      heatingPump: "Heating pump",
+      woodPellets: "Wood pellets",
+      house: "Dom",
+      apartment: "Byt",
+    },
+  },
+  nutrition: {
+    question: "Ako vyzerá vaše stravovanie?",
+    options: {
+      CARNIVORE: "Veľa mäsa",
+      FLEXITARIAN: "Rastlinné",
+      VEGETARIAN: "Vegetariánske",
+      VEGAN: "Vegánske",
+      none: "none",
+    },
+  },
+  consumerism: {
+    question: "Ako často nakupujete?",
+    options: {
+      frugal: "Úsporne",
+      normal: "Normálne",
+      lush: "Hojne",
+      none: "none",
+    },
+  },
+}

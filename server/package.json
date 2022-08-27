@@ -1,0 +1,23 @@
+{
+  "name": "server-for-emissions",
+  "version": "1.0.0",
+  "description": "emissions",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "dev": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.20.0",
+    "cors": "2.8.5",
+    "express": "4.18.1",
+    "serialport": "^10.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
