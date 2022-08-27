@@ -1,17 +1,5 @@
-![CI status](https://github.com/JarnoRFB/planted-co2-calculator/actions/workflows/ci.yml/badge.svg) ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=planted-co2-calculator)
-
-# planted-co2-calculator
-
 A transparency-first carbon footprint calculator for quickly estimating your personal carbon footprint.
 
-Try out the [German version](https://calculator.planted.green/de) or the
-[English version](https://calculator.planted.green/en)!
-
-## Design principles
-
-### Transparency first
-
-> [All models are wrong but some are useful.](https://en.wikipedia.org/wiki/All_models_are_wrong)
 
 Yet to be useful one needs to be able to see the model. That is why this project puts transparency-first.
 All numbers behind the estimations are backed by linked sources that are tracked throughout the calculation.
@@ -42,7 +30,7 @@ numbers. While e.g. knowing ones exact energy consumption in kWh allows for more
 ### Reactivity
 
 The UI updates on every input and gives the user direct visual feedback on how their actions influence their carbon footprint.
-This way the user can get a feeling for the carbon impact of different factors.
+This way the user can get a feeling for the carbon impact of different factors. 
 
 ### Internationalization
 
@@ -59,35 +47,7 @@ For adding a new language:
 
 The project is written in typescript, the frontend in Vue 3. To get started you only need `npm`.
 
-**Project setup**
 
-```
-npm install
-```
-
-**Compiles and hot-reloads for development**
-
-```
-npm run serve
-```
-
-**Runs unit tests**
-
-npm test
-
-**Compiles and minifies for production**
-
-```
-npm run build
-```
-
-**Lints and fixes files**
-
-```
-npm run lint
-```
-
-## In the news
 
 - The planted CO2 calculator was features in a [newspaper article](https://www.welt.de/regionales/nrw/article233822136/Koelner-Start-up-entwickelt-neuen-CO2-Rechner.html) in WELT.
   WELT.
@@ -102,3 +62,4 @@ Some of the more complex calculations are powered by [bloom-contrib](https://git
 inspiration for this project. Make sure to check out their products [bloomclimate.com](https://bloomclimate.com/) for
 carbon footprint analysis for companies, and [electricitymap.org](https://www.electricitymap.org/map) for
 a live map and API of the world's electricity data.
+
